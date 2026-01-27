@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HealthCare</title>
+        <link rel="stylesheet" href="HealthCare.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="head">
+            <img src="imags/icons8-hospital-64.png" />
+            <h3>HealthCare</h3>
+        </div>
+        <p id="message"></p>
+        <main>
+            <div class="div-Form">
+                <div>
+                    <form id="myform">
+                        <h2 class="titre">Formulaire de pré-admission</h2>
+                        <img
+                            src="imags/29282017-hopital-accueil-bien-travail-dans-clinique-salle-a-aider-aider-les-patients-sante-etablissement-a-fournir-haute-qualite-soins-de-sante-service-plat-vecteur-moderne-illustration-vectoriel.jpg"
+                        />
+                        <div class="inputs">
+                            <div class="label-input">
+                                <label for="nome"> Nome : </label>
+                                <label for="Pnome"> Prénome : </label>
+
+                                <label for="telephon"> Téléphone : </label>
+                                <label id="emial-label" for="email">
+                                    Email :
+                                </label>
+                                <label for="date"> Date de souhaitée : </label>
+
+                                <label for="motif">Motif :</label>
+                                <textarea
+                                    id="motif"
+                                    placeholder="Ecrie..."
+                                ></textarea>
+                            </div>
+
+                            <div class="label-input">
+                                <div class="icones-input">
+                                    <i class="ri-user-line"></i>
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        placeholder="Nome"
+                                        name="nome"
+                                    />
+                                </div>
+                                <div class="icones-input">
+                                    <i class="ri-user-line"></i>
+                                    <input
+                                        type="text"
+                                        id="prenome"
+                                        placeholder="Prénome"
+                                        name="Prenome"
+                                    />
+                                </div>
+                                <div class="icones-input">
+                                    <i class="ri-phone-fill"></i>
+                                    <input
+                                        type="tel"
+                                        id="telephon"
+                                        placeholder="Telephone"
+                                        name="telephon"
+                                    />
+                                </div>
+                                <div class="icones-input">
+                                    <i class="ri-mail-add-line"></i>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        placeholder="email"
+                                        name="email"
+                                    />
+                                </div>
+                                <div>
+                                    <input type="date" id="date" name="date" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="submit">
+                            <i class="ri-add-circle-line"></i>
+                            Ajeuter
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="table">
+                <div class="titre2">
+                    <h1>liste des demandes</h1>
+                    <img src="imags/icons8-doctor-male-100.png" />
+                </div>
+                <table>
+                    <thead>
+                        <tr class="th">
+                            <th>Nome</th>
+
+                            <th>Prénome</th>
+
+                            <th>Télephone</th>
+
+                            <th>Email</th>
+
+                            <th>Date</th>
+
+                            <th>Motif</th>
+
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody"></tbody>
+                </table>
+            </div>
+        </main>
+        <script src="healthCare.js"></script>
+    </body>
+</html>
