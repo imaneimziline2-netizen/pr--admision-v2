@@ -22,11 +22,29 @@ textarea,
 
 .head {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #9cbee7;
+    padding: 0 30px;
 }
+#logo {
+    display: flex;
+    align-items: center;
+}
+#recherch-box {
+    width: 250px;
+    position: relative;
+}
+#recherch-box i {
 
+}
+#recherch {
+    width: 100%;
+    background-color: #c1deff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid #004df3;
+}
 .titre1 {
     display: flex;
     justify-content: center;
@@ -169,7 +187,6 @@ table {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Header */
 th {
     background-color: #9cc5f4;
     color: #1f3b5c;
@@ -178,25 +195,21 @@ th {
     font-weight: bold;
 }
 
-/* Cells */
 td {
     padding: 6px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
-/* Lines alternées */
 tbody tr:nth-child(even) {
     background-color: #f5f9ff;
 }
 
-/* Hover sur ligne */
 tbody tr:hover {
     background-color: #eaf2ff;
     transition: background-color 0.3s;
 }
 
-/* Bouton supprimer */
 .suprim {
     color: red;
     background-color: #ddedff;
@@ -209,13 +222,11 @@ tbody tr:hover {
     transition: all 0.3s ease;
 }
 
-/* Hover bouton */
 .suprim:hover {
     background-color: #c6dcff;
     transform: scale(1.05);
 }
 
-/* Click bouton */
 .suprim:active {
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
