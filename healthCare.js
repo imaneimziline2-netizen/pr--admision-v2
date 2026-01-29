@@ -104,7 +104,7 @@ function controlMessage() {
     message.classList.add("show-msg");
 
     setTimeout(() => {
-        message.classList.remove("show-msg");
+    message.classList.remove("show-msg");
     }, 3000);
 }
 

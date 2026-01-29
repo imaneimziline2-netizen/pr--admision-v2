@@ -36,10 +36,10 @@ textarea,
     position: relative;
 }
 #recherch-box i {
-position: absolute;
-top:50% ;
-transform: translateY(-50%);
-left: 9px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 9px;
 }
 #recherch {
     width: 100%;
@@ -65,12 +65,15 @@ textarea {
     border-color: 1px;
 }
 
+.div-Form {
+    width: 50%;
+}
+
 form {
     padding: 10px;
-
     display: flex;
     gap: 60px;
-    width: 500px;
+    width: 100%;
     flex-direction: column;
     position: relative;
 }
@@ -79,12 +82,22 @@ form .inputs {
     display: flex;
     gap: 50px;
     border-radius: 10%;
+    width: 100%;
 }
 
 form .inputs .label-input {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+form .inputs .label-input input {
+    width: 60%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.591);
+    padding: 4px 2px;
 }
 
 #email-label {
@@ -248,4 +261,28 @@ tfoot td {
     background-color: #9cc5f4;
     color: #1f3b5c;
     font-weight: bold;
+}
+@media (max-width: 600px) {
+
+    form .inputs .label-input {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    form .inputs .label-input input {
+        width: 100%;
+    }
+
+    form .inputs .label-input .icones-input {
+        width: 80%;
+    }
+    form .inputs .label-input .icones-input input {
+        width: 100%;
+    }
+
+    .table h1 {
+        width: 300px;
+        font-size: medium;
+    }
 }
