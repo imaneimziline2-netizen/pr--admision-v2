@@ -1,6 +1,7 @@
 let form = document.getElementById("myform");
 let message = document.getElementById("message");
 let tablebody = document.getElementById("tablebody");
+let tfoot = document.getElementById("tfoot")
 
 const demandes = [];
 
@@ -41,7 +42,7 @@ form.addEventListener("submit", function (e) {
                 array[i].classList.remove("roug");
             }
         }
-        return; //kathbs lina ila l9at chi unput khawya
+        return;
     }
 
     let demande = {
@@ -63,10 +64,14 @@ form.addEventListener("submit", function (e) {
     message.style.textAlign = "center";
     controlMessage();
 
+    tfoot.querySelector("td").innerText ="Totale de demandes : " + demandes.length;
+
+
     form.reset();
     for (let i = 0; i < array.length; i++) {
         array[i].classList.remove("roug");
     }
+
 });
 
 function romplirTableax() {
@@ -91,6 +96,8 @@ function romplirTableax() {
 function funcDelet(index) {
     demandes.splice(index, 1);
     romplirTableax();
+    tfoot.querySelector("td").innerText = "Totale de demandes : " + demandes.length;
+
 }
 
 function controlMessage() {
@@ -100,3 +107,5 @@ function controlMessage() {
         message.classList.remove("show-msg");
     }, 3000);
 }
+
+
