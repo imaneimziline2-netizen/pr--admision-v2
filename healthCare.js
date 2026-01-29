@@ -108,4 +108,19 @@ function controlMessage() {
     }, 3000);
 }
 
+let search = document.getElementById("recherch");
 
+search.addEventListener("input", function () {
+    let value = search.value.toLowerCase();
+    let rows = tablebody.getElementsByTagName("tr");
+
+    for (let i = 0; i < rows.length; i++) {
+        let row = rows[i].innerText.toLowerCase();
+
+        if (row.includes(value)) {
+            rows[i].style.display = "";
+        } else {
+            rows[i].style.display = "none";
+        }
+    }
+});
