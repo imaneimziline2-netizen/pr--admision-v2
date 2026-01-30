@@ -96,7 +96,7 @@ form .inputs .label-input input {
     width: 60%;
     border-radius: 5px;
     outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.591);
+    border: 1px solid rgba(0, 0, 0, 0.591);
     padding: 4px 2px;
 }
 
@@ -247,7 +247,8 @@ tbody tr:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .roug {
-    border-color: red;
+    border-color: red 
+    !important;
 }
 #message {
     display: none;

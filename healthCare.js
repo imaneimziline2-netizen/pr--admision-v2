@@ -15,7 +15,7 @@ form.addEventListener("submit", function (e) {
     let date = document.getElementById("date").value;
     let motif = document.getElementById("motif").value;
 
-    let inputs = document.querySelectorAll("input");
+    let inputs = document.querySelectorAll("form input");
     let txter = document.querySelector("textarea");
     let array = Array.from(inputs);
     array.push(txter);
@@ -33,7 +33,7 @@ form.addEventListener("submit", function (e) {
         message.style.fontWeight = "bold";
         message.style.textAlign = "center";
         controlMessage();
-        // hada dyal lon dyal input llhawya
+        
 
         for (let i = 0; i < array.length; i++) {
             if (array[i].value === "") {
